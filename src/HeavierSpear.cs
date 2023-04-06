@@ -40,7 +40,7 @@ namespace HeavierSpear
             if (directionAndMomentum.HasValue && self.HitHeadShield(directionAndMomentum.Value) &&
                 source?.owner is Spear && self.Template.type != CreatureTemplate.Type.RedLizard)
             {
-                if (_options.modifyStun.Value)
+                if (_options.ModifyStun.Value)
                 {
                     stunBonus = 45;
                     if (ModManager.MSC && source.owner != null &&
@@ -54,7 +54,7 @@ namespace HeavierSpear
             // Calls original method
             orig(self, source, directionAndMomentum, hitChunk, onAppendagePos, type, damage, stunBonus);
 
-            if (!bl || !_options.flipLizard.Value) return;
+            if (!bl || !_options.FlipLizard.Value) return;
             
             self.turnedByRockDirection = (int) Mathf.Sign(source.pos.x - source.lastPos.x);
             self.turnedByRockCounter = 20;

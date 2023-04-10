@@ -1,4 +1,7 @@
-﻿# Heavier Spears
+### Archived
+This project has been archived and merged with [QuTweaks](https://github.com/Quplet/QuTweaks).
+ 
+# Heavier Spears
 
 A small Rain World mod I made for my friend because he is a pussy.
 
